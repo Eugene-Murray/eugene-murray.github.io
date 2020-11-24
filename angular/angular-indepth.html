@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>web indepth - angular</title>
+<link rel="stylesheet" href="https://use.typekit.net/foh4siv.css">
+<link rel="stylesheet" href="https://use.typekit.net/foh4siv.css">
+<link href="../assets/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
+<style>
+.item1 {
+	grid-area: header;
+	height: 5vh;
+}
+.item2 {
+	grid-area: menu;
+}
+.item3 {
+	grid-area: main;
+	height: 89vh;
+    text-align: left;
+}
+.item4 {
+	grid-area: footer;
+	height: 5vh;
+	background-color: #000;
+}
+.grid-container {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 'header header header header header header' 'menu main main main main main' 'menu footer footer footer footer footer';
+	grid-gap: 2px;
+	background-color: #000;
+	/*padding: 10px;*/
+	margin: 0;
+}
+.grid-container > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	/*padding: 20px 0;*/
+	font-size: 30px;
+}
+div section {
+	margin: 10px;
+    text-align: left;
+}
+    .article {
+        height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+    }
+    
+    img {
+        width: 1000px;
+    }
+    
+</style>
+</head>
+
+<body>
+<div class="grid-container">
+  <div class="item1">
+    <div include-component="../components/header.html"></div>
+  </div>
+  <div class="item2">
+    <div include-component="../components/menu.html"></div>
+  </div>
+  <div class="item3">
+    <header><a href="../angular-indepth.html"><i class="fas fa-arrow-alt-circle-right"></i> Angular Indepth</a></header>
+    
+    <!-- Angular pagination -->
+    <div class="article">
+      <h1>Angular Pagination Component</h1>
+        <div align="left">
+            <ul style="text-align: left;">
+        <li>1.	Introduction </li>
+        <li>2.	Pagination Module </li>
+        <li>3.	Data source / models </li>
+        <li>4.	Services </li>
+        <li>5.	Components </li>
+        <li>6.	Next steps </li>
+        <li>7.	Conclusion. </li>
+      </ul>
+        </div>
+      
+        
+        
+      <section>
+        <h2>1.	Introduction</h2>
+          
+          <img src="../assets/images/angular-pagination/1.png">
+          <br>
+          
+      My name is Eugene and I am a web designer and developer. In this course I am going to look at developing an Angular pagination component with filtering. I am going to use stackblitz to keep things simple.
+          <br>
+      This is the url;<br>
+      <a href="https://stackblitz.com/edit/angular-client-pagination-example" target="_blank">https://stackblitz.com/edit/angular-client-pagination-example</a> 
+      <br>
+          Initially I am going to start with an un-styled UI to focus on the pagination and filtering components, with an external data source of Chuck Norris ‘jokes’. I had a task to build these in my day job earlier in the year using Angular 9. In the next videos I will use the latest version of Angular and use more advanced features.
+        </section>
+      
+      
+      
+      <section>
+          <h2>2.	Pagination Module</h2>
+          <img src="../assets/images/angular-pagination/1.png">
+          <br>
+      The pagination module has three folders, the components, the entities and the services.
+      Starting with the services;
+          <br>
+      •	The data service.
+      <br>
+      •	The filter services;
+      
+      
+      
+      
+      
+      
+      
+      
+      <br>
+      •	The pagination services;
+          <img src="../assets/images/angular-pagination/1.png">
+          <br>
+        </section>
+      
+      
+      
+      <section>
+          <h2>3.	The models; </h2>
+          <img src="../assets/images/angular-pagination/1.png">
+          <br>
+      </section>
+      
+        <section>
+     <h2> 4.	The components; </h2>
+            <img src="../assets/images/angular-pagination/1.png">
+          <br>
+            </section>
+      
+        <section>
+      <h2>5.	Next steps; </h2>
+            <img src="../assets/images/angular-pagination/1.png">
+          <br>
+            </section>
+        
+      <section>
+      <h2>6.	Conclusion  </h2>
+          <img src="../assets/images/angular-pagination/1.png">
+          <br>
+      </section>
+      
+      </div>
+    
+    <!-- ../ Angular Pagination Component --> 
+    
+  </div>
+  <div class="item4">
+    <div include-component="./components/footer.html"></div>
+  </div>
+</div>
+<script type="text/javascript" src="../js/component-loader.js"></script> 
+<script type="text/javascript" src="../js/header.js"></script> 
+<script>
+    const componentLoader = new ComponentLoader();
+        componentLoader.loadComponents();
+    </script> 
+<!--<script>
+    console.warn('index');
+        
+        document.querySelector('#test').innerHTML = '<div><div> goo </div></div>';
+</script>-->
+</body>
+</html>
